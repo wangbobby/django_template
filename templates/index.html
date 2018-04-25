@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Template</h1>
+{#{{ list.2 }}#}
+{#{{ obj.username }}#}
+
+{#{{ obj }}#}
+{#{{ obj.year }}#}
+{#{{ obj.month }}#}
+
+{#{{ obj.name }}#}
+{#{{ obj.age }}#}
+{#{{ obj }}#}
+
+{#{% if False%}#}
+{#    <p>Hello World</p>#}
+{#{% elif obj %}#}
+{#    <p>Hello2</p>#}
+{#{% endif %}#}
+
+{#{%  for i in obj %}#}
+{#    <p>Times{{ forloop.counter }}:{{ i }}</p>#}
+{#    <p>Times{{ forloop.counter0 }}:{{ i }}</p>#}
+{#    <p>Times{{ forloop.revcounter }}:{{ i }}</p>#}
+{##}
+{#{% endfor %}#}
+
+{#{{ obj|upper }}#}
+{#{{ obj|capfirst }}#}
+
+{#{{ obj|add:5 }}#}
+
+{#wwww{{ obj }}#}
+{#wwww{{ obj|default:"empty" }}#}
+
+{#{% autoescape off %}#}
+{#{{ obj }}#}
+{#{% endautoescape %}#}
+
+{{ obj }}
+
+</body>
+</html>
